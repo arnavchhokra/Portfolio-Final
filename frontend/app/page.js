@@ -25,6 +25,10 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import MailIcon from "@mui/icons-material/Mail";
 import { Twitter } from "@mui/icons-material";
 import { useRef } from "react";
+import three from "../public/three.jpg"
+import akat from "../public/akat.jpg"
+import scream from "../public/scream.jpg"
+
 export default function Home() {
   const screenAnimation = useAnimation();
   const textAnimation = useAnimation();
@@ -194,7 +198,7 @@ export default function Home() {
                       timezone={"Asia/Kolkata"}
                     />
                   </motion.p>
-                  <motion.p>Indian Stanard Time</motion.p>
+                  <motion.p>Indian Standard Time</motion.p>
                 </motion.div>
               </motion.div>
               <motion.div
@@ -383,64 +387,65 @@ export default function Home() {
         </motion.div>
       </div>
 
-      <div style={{ marginTop: "-750px", paddingLeft: "8%",
+      <div style={{ marginTop: "-710px", paddingLeft: "8%",
             paddingRight: "8%", }}>
         <motion.div
-          style={{ textAlign: "center", fontSize: "35px", fontWeight: "800" }}
+          style={{ textAlign: "left", fontSize: "35px", fontWeight: "800", marginBottom:'25px' }}
         >
           PROJECTS
         </motion.div>
-        <motion.div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            gap:'30px'
-          }}
-        >
-          {" "}
-          <div  style={{ position:'sticky', top:'10px', marginTop:'130px' }}>
-          <Image
-            className="sticky"
-            alt=""
-            src={ThreeMail}
-            style={{ width: "400px", height: "auto"}}
-          />
-          </div>
-          <motion.div  style={{display:'flex', flexDirection:'column',gap:'400px', marginTop:'200px'}}>
-            <motion.div className="Project-Banner" >
-              <motion.span>ThreeMail</motion.span>
-              <motion.p> Developed with Solidity, React, and Web3.js, brings decentralized
-              messaging to the forefront. Using asymmetric encryption on the
-              Ethereum blockchain ensures robust privacy and tamper-proof
-              communication. The React interface, integrated with Web3.js,
-              guarantees user-friendly interactions while maintaining the
-              highest security standards, making Threemail the ideal choice for
-              decentralized, private messaging.</motion.p>
-            </motion.div>
-            <motion.div className="Project-Banner">
-              <motion.span>Furry Personality</motion.span>
-              <motion.p> Developed with Solidity, React, and Web3.js, brings decentralized
-              messaging to the forefront. Using asymmetric encryption on the
-              Ethereum blockchain ensures robust privacy and tamper-proof
-              communication. The React interface, integrated with Web3.js,
-              guarantees user-friendly interactions while maintaining the
-              highest security standards, making Threemail the ideal choice for
-              decentralized, private messaging.</motion.p>
-            </motion.div>
-            <motion.div className="Project-Banner">
-              <motion.span>Fullstack Ecommerce</motion.span>
-              <motion.p> Developed with Solidity, React, and Web3.js, brings decentralized
-              messaging to the forefront. Using asymmetric encryption on the
-              Ethereum blockchain ensures robust privacy and tamper-proof
-              communication. The React interface, integrated with Web3.js,
-              guarantees user-friendly interactions while maintaining the
-              highest security standards, making Threemail the ideal choice for
-              decentralized, private messaging.</motion.p>
-            </motion.div>
-            <motion.div style={{height:'1px', background:'blue',marginTop:'-90px'}}/>
-          </motion.div>
-          </motion.div>
+        <motion.div style={{display:'flex', gap:'5px'}}>
+          <Image style={{width:"628px",height:'auto',borderRadius:'5px'}} src={scream} alt="" />
+          <Image style={{width:"628px",height:'auto',borderRadius:'5px'}}src={akat} alt="" />
+        </motion.div>
+        <Image style={{width:"1260px",height:'auto',borderRadius:'5px', height:'350px', objectFit:'cover', marginTop:'5px'}}src={three} alt="" />
       </div>
+      <div class="background">
+  <div class="container">
+    <div class="screen">
+      <div class="screen-header">
+        <div class="screen-header-left">
+          <div class="screen-header-button close"></div>
+          <div class="screen-header-button maximize"></div>
+          <div class="screen-header-button minimize"></div>
+        </div>
+        <div class="screen-header-right">
+          <div class="screen-header-ellipsis"></div>
+          <div class="screen-header-ellipsis"></div>
+          <div class="screen-header-ellipsis"></div>
+        </div>
+      </div>
+      <div class="screen-body">
+        <div class="screen-body-item left">
+          <div class="app-title">
+            <span style={{fontWeight:'800'}}>CONTACT US</span>
+          </div>
+        </div>
+        <div class="screen-body-item">
+          <div class="app-form" style={{fontWeight:'800'}}>
+            <div class="app-form-group">
+              <input class="app-form-control" placeholder="NAME" value="Arnav Chhokra"/>
+            </div>
+            <div class="app-form-group">
+              <input class="app-form-control" placeholder="EMAIL"/>
+            </div>
+            <div class="app-form-group">
+              <input class="app-form-control" placeholder="CONTACT NO"/>
+            </div>
+            <div class="app-form-group message">
+              <input class="app-form-control" placeholder="MESSAGE"/>
+            </div>
+            <div class="app-form-group buttons" style={{display:'flex',gap:'20px'}}>
+              <button class="app-form-button">CANCEL</button>
+              <button class="app-form-button">SEND</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
     </div>
   );
 }
