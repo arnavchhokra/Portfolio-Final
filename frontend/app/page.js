@@ -3,17 +3,17 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import { motion, useAnimation, useScroll, useInView } from "framer-motion";
 import { useEffect } from "react";
-import arnav from "../public/arnav.jpg";
-import cpp from "../public/cpp.png";
-import c from "../public/c.png";
-import css from "../public/css.png";
-import django from "../public/django.png";
-import ethereum from "../public/ethereum.png";
-import html from "../public/html.png";
-import python from "../public/python.png";
-import react from "../public/react.png";
-import typescript from "../public/typescript.png";
-import ThreeMail from "../public/ThreeMail.png";
+import arnav from "@/public/arnav.jpg";
+import cpp from "@/public/cpp.png";
+import c from "@/public/c.png";
+import css from "@/public/css.png";
+import django from "@/public/django.png";
+import ethereum from "@/public/ethereum.png";
+import html from "@/public/html.png";
+import python from "@/public/python.png";
+import react from "@/public/react.png";
+import typescript from "@/public/typescript.png";
+import ThreeMail from "@/public/ThreeMail.png";
 import Clock from "react-live-clock";
 
 import Marquee from "react-fast-marquee";
@@ -25,9 +25,9 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import MailIcon from "@mui/icons-material/Mail";
 import { Twitter } from "@mui/icons-material";
 import { useRef } from "react";
-import three from "../public/three.jpg"
-import akat from "../public/akat.jpg"
-import scream from "../public/scream.jpg"
+import three from "@/public/three.jpg"
+import akat from "@/public/akat.jpg"
+import scream from "@/public/scream.jpg"
 
 export default function Home() {
   const screenAnimation = useAnimation();
@@ -397,7 +397,7 @@ export default function Home() {
 
 
       <div className='PR' style={{ marginTop: "0px", paddingLeft: "8%",
-            paddingRight: "8%", marginTop:'-780px'}}>
+            paddingRight: "8%", marginTop:'-850px'}}>
         <motion.div
           style={{ textAlign: "left", fontSize: "35px", fontWeight: "800", marginBottom:'25px' }}
         >
