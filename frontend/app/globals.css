@@ -1,5 +1,6 @@
 html {
-  overflow:   scroll;
+  overflow-y:   scroll;
+  overflow-x: clip;
 }
 
 ::-webkit-scrollbar {
@@ -120,7 +121,7 @@ a {
   position: -webkit-sticky; /* Safari */
   position: sticky !important;
   top: 160px;
-  
+
 }
 .Project-Banner span{
   font-size: 35px;
@@ -376,4 +377,14 @@ a {
   .screen-body-item {
     padding: 0;
   }
+}
+
+
+
+.ME{
+  position: absolute; top: 50%; left: 62.5%; transform: translate(-50%, -50%);
+}
+.PR{
+  position: absolute; left: 50%; transform: translate(-50%, 0%);
+
 }

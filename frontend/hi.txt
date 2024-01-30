@@ -1,0 +1,266 @@
+<div style={{display:'flex', justifyContent: 'center', alignItems:'center'}}>
+      <div class="conti" style={{color:'white',}}>
+  <div class="ImageCont" syle={{background:'blue',}}> <Image
+              style={{
+                objectFit: "cover",
+                height: "100%",
+                borderRadius: "5px",
+                border: "1px solid grey",
+                width: "100%"
+              }}
+              src={arnav}
+              alt=""
+            /></div>
+  <div class="Name"> <motion.div
+                style={{
+                  border: "1px solid grey",
+                  borderRadius: "5px",
+                  padding: "20px",
+                }}
+              >
+                <motion.p
+                  style={{
+                    fontSize: "35px",
+                    fontWeight: "800",
+                    marginBottom: "80px",
+                  }}
+                >
+                  I'm Arnav
+                </motion.p>
+                <motion.p>
+                  A Blockchain/Web Developer and software engineer, skilled in
+                  crafting decentralized applications (DApps) and dynamic web
+                  solutions. Proficient in Ethereum, Hyperledger, and modern web
+                  technologies. With a strong software engineering background,
+                  proficient in both front-end and backend development.
+                </motion.p>
+              </motion.div></div>
+  <div class="Links"> <motion.div style={{ display: "flex", flexDirection: "column" }}>
+                <motion.div
+                  style={{ display: "flex", alignItems: "center", gap: "3px" }}
+                >
+                  <motion.p
+                    style={{
+                      fontSize: "35px",
+                      fontWeight: "800",
+                      padding: "15px",
+                    }}
+                  >
+                    LIN
+                    <br />
+                    KS:
+                  </motion.p>
+                  <TwitterIcon
+                    style={{
+                      width: "80px",
+                      height: "80px",
+                      background: "white",
+                      color: "black",
+                      borderRadius: "5px",
+                      padding: "15px",
+                    }}
+                  />
+                  <GitHubIcon
+                    style={{
+                      width: "80px",
+                      height: "80px",
+                      background: "white",
+                      color: "black",
+                      borderRadius: "5px",
+                      padding: "15px",
+                    }}
+                  />
+                </motion.div>
+                <motion.div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "3px",
+                    marginLeft: "7px",
+                  }}
+                >
+                  <LinkedInIcon
+                    style={{
+                      width: "80px",
+                      height: "80px",
+                      background: "white",
+                      color: "black",
+                      borderRadius: "5px",
+                      padding: "15px",
+                    }}
+                  />
+                  <InstagramIcon
+                    style={{
+                      width: "80px",
+                      height: "80px",
+                      background: "white",
+                      color: "black",
+                      borderRadius: "5px",
+                      padding: "15px",
+                    }}
+                  />
+                  <MailIcon
+                    style={{
+                      width: "80px",
+                      height: "80px",
+                      background: "white",
+                      color: "black",
+                      borderRadius: "5px",
+                      padding: "15px",
+                    }}
+                  />
+                </motion.div>
+              </motion.div></div>
+  <div class="Skills"><motion.div
+                  style={{
+                    border: "1px solid grey",
+                    borderRadius: "5px",
+                    padding: "20px",
+                    height:'100%'
+                  }}
+                >
+                  <motion.p
+                    style={{
+                      fontSize: "35px",
+                      fontWeight: "800",
+                      marginBottom: "20px",
+                    }}
+                  >
+                    SKILLS
+                  </motion.p>
+                  <motion.p>
+                    Frontend
+                    <br />
+                    Web3
+                    <br />
+                    Backend
+                    <br />
+                    DSA
+                    <br />
+                  </motion.p>
+                </motion.div></div>
+  <div class="Time">   <motion.div
+                  style={{
+                    border: "1px solid grey",
+                    borderRadius: "5px",
+                    padding: "20px",
+                    marginLeft: "5px",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "space-between",
+                    height:'100%'
+                  }}
+                >
+                  <motion.p
+                    style={{
+                      fontSize: "35px",
+                      fontWeight: "800",
+                      marginBottom: "5px",
+                    }}
+                  >
+                    <Clock
+                      format={"HH:MM A"}
+                      ticking={true}
+                      interval={0}
+                      timezone={"Asia/Kolkata"}
+                    />
+                  </motion.p>
+                  <motion.p>Indian Standard Time</motion.p>
+                </motion.div></div>
+  <div class="Project"> <motion.div
+                style={{
+                  border: "1px solid grey",
+                  borderRadius: "5px",
+                  fontWeight: "800",
+                  fontSize: "30px",
+                  padding: "20px",
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "space-between",
+                  width: "255px",
+                  height:'100%'
+                }}
+              >
+                <motion.p>HAVE A PROJECT IN MIND</motion.p>
+                <button
+                  style={{
+                    padding: "20px",
+                    fontSize: "20px",
+                    fontWeight: "800",
+                    borderRadius: "5px",
+                  }}
+                >
+                  hey@arnav.com
+                </button>
+              </motion.div></div>
+  <div class="Marq">
+  <motion.div
+                style={{
+                  border: "1px solid grey",
+                  borderRadius: "5px",
+                  padding: "20px",
+                  display: "flex",
+                  height: "100%",
+                  flexDirection: "column",
+                  justifyContent: "flex-end",
+                }}
+              >
+                <motion.div style={{ display: "flex" }}>
+                  <motion.p style={{ fontSize: "25px", fontWeight: "800" }}>
+                    STACK
+                  </motion.p>
+                  <Marquee
+                    autoFill="true"
+                    speed="80"
+                    style={{ width: "90%", marginLeft: "20px" }}
+                  >
+                    <motion.div
+                      className="Marquee"
+                      style={{
+                        display: "flex",
+                        gap: "20px",
+                        marginRight: "20px",
+                      }}
+                    >
+                      <Image
+                        src={cpp}
+                        alt=""
+                        style={{ width: "35px", height: "35px" }}
+                      />
+                      <Image
+                        src={css}
+                        alt=""
+                        style={{ width: "35px", height: "35px" }}
+                      />
+                      <Image
+                        src={c}
+                        alt=""
+                        style={{ width: "35px", height: "35px" }}
+                      />
+                      <Image
+                        src={ethereum}
+                        alt=""
+                        style={{ width: "35px", height: "35px" }}
+                      />
+                      <Image
+                        src={html}
+                        alt=""
+                        style={{ width: "35px", height: "35px" }}
+                      />
+                      <Image
+                        src={python}
+                        alt=""
+                        style={{ width: "35px", height: "35px" }}
+                      />
+                      <Image
+                        src={typescript}
+                        alt=""
+                        style={{ width: "35px", height: "35px" }}
+                      />
+                    </motion.div>
+                  </Marquee>
+                </motion.div>
+              </motion.div>
+  </div>
+</div>
+</div>

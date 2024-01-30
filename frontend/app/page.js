@@ -33,6 +33,7 @@ export default function Home() {
   const screenAnimation = useAnimation();
   const textAnimation = useAnimation();
   const UpAnimation = useAnimation();
+  const RightAnimation = useAnimation();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
@@ -78,6 +79,9 @@ export default function Home() {
             Arnav Chhokra
           </motion.p>
         </motion.div>
+
+
+
         <motion.div
           style={{
             background: "black",
@@ -95,7 +99,9 @@ export default function Home() {
           animate={UpAnimation}
           transition={{ delay: -1.5, duration: 2 }}
         >
-          <motion.div className="Upper" style={{ display: "flex", gap: "5px" }}>
+          <div class='ME'style={{}}>
+          <motion.div className="Upper" style={{ display: "flex", gap: "5px",justifyContent:'center', alignItems:'center', justifySelf:'center',
+}}>
             <Image
               style={{
                 objectFit: "cover",
@@ -358,7 +364,7 @@ export default function Home() {
               <motion.div
                 style={{
                   border: "1px solid grey",
-                  marginTop: "5px",
+                  marginTop: "16px",
                   borderRadius: "5px",
                   fontWeight: "800",
                   fontSize: "30px",
@@ -384,11 +390,14 @@ export default function Home() {
               </motion.div>
             </motion.div>
           </motion.div>
+          </div>
         </motion.div>
       </div>
 
-      <div style={{ marginTop: "-710px", paddingLeft: "8%",
-            paddingRight: "8%", }}>
+
+
+      <div className='PR' style={{ marginTop: "0px", paddingLeft: "8%",
+            paddingRight: "8%", marginTop:'-780px'}}>
         <motion.div
           style={{ textAlign: "left", fontSize: "35px", fontWeight: "800", marginBottom:'25px' }}
         >
@@ -449,3 +458,4 @@ export default function Home() {
     </div>
   );
 }
+
