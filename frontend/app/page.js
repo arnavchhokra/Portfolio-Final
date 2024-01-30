@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import { motion, useAnimation, useScroll, useInView } from "framer-motion";
 import { useEffect } from "react";
-import arnav from "./public/arnav.jpg";
+import arnav from "./public/Arnav.jpg";
 import cpp from "./public/cpp.png";
 import c from "./public/c.png";
 import css from "./public/css.png";
