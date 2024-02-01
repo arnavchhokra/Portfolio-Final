@@ -14,7 +14,6 @@ import python from "./public/python.png";
 import react from "./public/react.png";
 import typescript from "./public/typescript.png";
 import ThreeMail from "./public/ThreeMail.png";
-import Clock from "react-live-clock";
 
 import Marquee from "react-fast-marquee";
 import "./globals.css";
@@ -24,7 +23,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import MailIcon from "@mui/icons-material/Mail";
 import { Twitter } from "@mui/icons-material";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import three from "./public/three.jpg"
 import akat from "./public/akat.jpg"
 import scream from "./public/scream.jpg"
@@ -34,12 +33,11 @@ export default function Home() {
   const textAnimation = useAnimation();
   const UpAnimation = useAnimation();
   const RightAnimation = useAnimation();
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const VisibilityAnimation = useAnimation();
+
 
   useEffect(() => {
     const startAnimation = async () => {
-      // Sequence: Screen from black to white
       await screenAnimation.start({ background: "white" });
       await textAnimation.start({
         opacity: 1,
@@ -51,8 +49,24 @@ export default function Home() {
         transition: { delay: 0, duration: 0.2 },
       });
       await UpAnimation.start({ y: "-100vh" });
-    };
+      await VisibilityAnimation.start({
+        opacity: 1,
+      });    };
+
+
     startAnimation();
+  }, []);
+
+  const [currentTime, setCurrentTime] = useState(new Date());
+  const formattedTime = currentTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: true });
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentTime(new Date());
+    }, 1000); // Update every second
+
+    // Cleanup the interval on component unmount
+    return () => clearInterval(intervalId);
   }, []);
 
   return (
@@ -102,6 +116,9 @@ export default function Home() {
           <div class='ME'style={{}}>
           <motion.div className="Upper" style={{ display: "flex", gap: "5px",justifyContent:'center', alignItems:'center', justifySelf:'center',
 }}>
+            <motion.div transition={{ delay: 0, duration: 1,  ease: "easeInOut" }}
+              initial={{ opacity: 0 }}
+              animate={VisibilityAnimation}>
             <Image
               style={{
                 objectFit: "cover",
@@ -113,11 +130,15 @@ export default function Home() {
               src={arnav}
               alt=""
             />
+            </motion.div>
             <motion.div
               className="Upper-Middle"
               style={{ display: "flex", flexDirection: "column" }}
             >
               <motion.div
+              transition={{ delay: 0, duration: 2,  ease: "easeInOut" }}
+              initial={{ opacity: 0 }}
+              animate={VisibilityAnimation}
                 style={{
                   border: "1px solid grey",
                   borderRadius: "5px",
@@ -157,6 +178,9 @@ export default function Home() {
                     padding: "20px",
                     width: "450px",
                   }}
+                  transition={{ delay: 0.5, duration: 2,  ease: "easeInOut" }}
+              initial={{ opacity: 0 }}
+              animate={VisibilityAnimation}
                 >
                   <motion.p
                     style={{
@@ -189,6 +213,9 @@ export default function Home() {
                     flexDirection: "column",
                     justifyContent: "space-between",
                   }}
+                  transition={{ delay: 1, duration: 2,  ease: "easeInOut" }}
+              initial={{ opacity: 0 }}
+              animate={VisibilityAnimation}
                 >
                   <motion.p
                     style={{
@@ -197,12 +224,7 @@ export default function Home() {
                       marginBottom: "5px",
                     }}
                   >
-                    <Clock
-                      format={"HH:MM A"}
-                      ticking={true}
-                      interval={0}
-                      timezone={"Asia/Kolkata"}
-                    />
+                    {formattedTime}
                   </motion.p>
                   <motion.p>Indian Standard Time</motion.p>
                 </motion.div>
@@ -217,7 +239,11 @@ export default function Home() {
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "flex-end",
+
                 }}
+                transition={{ delay: 1.5, duration: 2,  ease: "easeInOut" }}
+              initial={{ opacity: 0 }}
+              animate={VisibilityAnimation}
               >
                 <motion.div style={{ display: "flex" }}>
                   <motion.p style={{ fontSize: "25px", fontWeight: "800" }}>
@@ -285,7 +311,11 @@ export default function Home() {
                 width: "750px",
               }}
             >
-              <motion.div style={{ display: "flex", flexDirection: "column" }}>
+              <motion.div
+              transition={{ delay: 2, duration: 2,  ease: "easeInOut" }}
+              initial={{ opacity: 0 }}
+              animate={VisibilityAnimation}
+              style={{ display: "flex", flexDirection: "column" }}>
                 <motion.div
                   style={{ display: "flex", alignItems: "center", gap: "3px" }}
                 >
@@ -375,6 +405,9 @@ export default function Home() {
                   justifyContent: "space-between",
                   width: "255px",
                 }}
+                transition={{ delay: 2.5, duration: 2,  ease: "easeInOut" }}
+              initial={{ opacity: 0 }}
+              animate={VisibilityAnimation}
               >
                 <motion.p>HAVE A PROJECT IN MIND</motion.p>
                 <button
