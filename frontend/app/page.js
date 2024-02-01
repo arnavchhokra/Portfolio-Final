@@ -22,7 +22,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import MailIcon from "@mui/icons-material/Mail";
-import { Twitter } from "@mui/icons-material";
+import { ScaleSharp, Twitter } from "@mui/icons-material";
 import { useRef, useState } from "react";
 import three from "./public/three.jpg"
 import akat from "./public/akat.jpg"
@@ -35,6 +35,25 @@ export default function Home() {
   const RightAnimation = useAnimation();
   const VisibilityAnimation = useAnimation();
 
+  const scaleAnimation1 = useAnimation();
+  const scaleAnimation2 = useAnimation();
+  const scaleAnimation3 = useAnimation();
+  const scaleAnimation4 = useAnimation();
+
+
+  function Hovered(anim) {
+    anim.start({
+      scale: 1.05,
+      transition: { delay:0, duration: 0.5, ease:'easeInOut' },
+    })
+  }
+
+  function NoHovered(anim){
+    anim.start({
+      scale: 1,
+      transition: { delay:0, duration: 0.5, ease:'easeInOut' },
+    })
+  }
 
   useEffect(() => {
     const startAnimation = async () => {
@@ -436,11 +455,17 @@ export default function Home() {
         >
           PROJECTS
         </motion.div>
-        <motion.div style={{display:'flex', gap:'5px'}}>
+        <motion.div style={{display:'flex', gap:'5px'}} >
+          <motion.div onHoverStart={() => Hovered(scaleAnimation1)} onHoverEnd={()=>NoHovered(scaleAnimation1)} animate={scaleAnimation1} initial={{scale:1}}>
           <Image style={{width:"628px",height:'auto',borderRadius:'5px'}} src={scream} alt="" />
+          </motion.div>
+          <motion.div onHoverStart={() => Hovered(scaleAnimation2)} onHoverEnd={()=>NoHovered(scaleAnimation2)} animate={scaleAnimation2} initial={{scale:1}}>
           <Image style={{width:"628px",height:'auto',borderRadius:'5px'}}src={akat} alt="" />
+          </motion.div>
         </motion.div>
+        <motion.div  onHoverStart={() => Hovered(scaleAnimation3)} onHoverEnd={()=>NoHovered(scaleAnimation3)} animate={scaleAnimation3} initial={{scale:1}}   >
         <Image style={{width:"1260px",height:'auto',borderRadius:'5px', height:'350px', objectFit:'cover', marginTop:'5px'}}src={three} alt="" />
+        </motion.div>
       </div>
       <div class="background">
   <div class="container">
