@@ -549,3 +549,10 @@ a {
   }
 
 }
+
+@media screen and (max-height: 900px) {
+  .PR{
+    margin-top: 1000px !important;
+  }
+
+}
