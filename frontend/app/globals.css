@@ -543,7 +543,7 @@ a {
 
 }
 
-@media screen and (max-height: 1000px) {
+@media screen and (max-height: 1200px) {
   .PR{
     margin-top: 50px !important;
   }
