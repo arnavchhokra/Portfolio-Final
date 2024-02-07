@@ -499,6 +499,10 @@ a {
 .Upper-Middle{
   width:60% !important;
 }
+.Stack-Box{
+  height:150px !important;
+}
+
 
 }
 @media screen and (max-width: 550px) {

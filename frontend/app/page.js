@@ -93,8 +93,6 @@ export default function Home() {
       width: "100%",
       height:'100%',
       color: "white",
-      paddingLeft:'8%',
-      paddingRight:'8%'
     }}>
       <div className="Home-Pre" style={{
       width: "100%",
@@ -135,6 +133,7 @@ export default function Home() {
             justifyContent: "center",
             display: "flex",
             flexDirection: "column",
+
           }}
           initial={{ y: "1000vh" }}
           animate={UpAnimation}
@@ -304,7 +303,7 @@ export default function Home() {
               initial={{ opacity: 0 }}
               animate={VisibilityAnimation}
               >
-                <motion.div style={{ display: "flex", }}>
+                <motion.div  style={{ display: "flex", }}>
                   <motion.p style={{ fontSize: "25px", fontWeight: "800" }}>
                     STACK
                   </motion.p>
