@@ -91,6 +91,7 @@ html {
 
 html,
 body {
+background:black !important;
 }
 
 body {
@@ -160,8 +161,7 @@ a {
 .background {
   display: flex;
   min-height: 100vh;
-  padding-left: 8%;
-  padding-right: 8%;
+
   font-weight: 600;
 }
 
@@ -382,9 +382,166 @@ a {
 
 
 .ME{
-  position: absolute; top: 50%; left: 62.5%; transform: translate(-50%, -50%);
+/*  position: absolute; top: 50%; left: 62.5%; transform: translate(-50%, -50%); */
 }
 .PR{
-  position: absolute; left: 50%; transform: translate(-50%, 0%);
+/*  position: absolute; left: 50%; transform: translate(-50%, 0%); */
+
+}
+
+
+@media screen and (max-width: 1138px) {
+  .Responsive-Bottom{
+    display:none !important;
+    justify-content: flex-start !important;
+  }
+  .Upper-Right{
+    display:none !important;
+  }
+  .Home{
+    padding-right:5% !important;
+    padding-left: 5% !important;
+  }
+
+}
+
+
+@media screen and (max-width: 1000px) {
+  .Home{
+    padding-right:0% !important;
+    padding-left: 0% !important;
+  }
+
+}
+
+
+@media screen and (max-width: 900px) {
+.Stack-Box{
+ /*height: 10% !important; */
+
+}
+.intro{
+  height:42vh !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-around !important;
+
+}
+.SKILLS{
+  width:65%!important;
+}
+.IST{
+  width:35% !important;
+  height:100% !important;
+
+}
+.links-icn{
+ font-size: 25px !important;
+}
+.icn{
+  width:60px !important;
+  height:60px !important;
+  padding:5px !important;
+}
+.HavePr{
+  font-size: 20px !important;
+}
+
+.intro{
+}
+.intro-text{
+  margin-bottom: 30px !important;
+}
+}
+
+@media screen and (max-width: 650px) {
+  .imgcontainer{
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+    justify-content: flex-start !important;
+  }
+  .Myimg{
+    height: 81% !important;
+    width:200px !important;
+  }
+  .Home{
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+  }
+  .Responsive-Bottom{
+    width:90% !important;
+  }
+  .SKILLS{
+    width:55% !important;
+    height:100% !important;
+
+  }
+
+
+}
+
+
+@media screen and (max-width: 550px) {
+  .imgcontainer{
+    display: flex !important;
+    height: 100% !important;
+    justify-content: center !important;
+  }
+  .Myimg{
+    height: 81% !important;
+    width:100% !important;
+  }
+  .SKILLS{
+    width:55% !important;
+    height:100% !important;
+  }
+.Upper-Middle{
+  width:60% !important;
+}
+
+}
+@media screen and (max-width: 550px) {
+  .imgcontainer{
+    display: none !important;
+  }
+  .Myimg{
+
+  }
+
+.imgcontainer2{
+  display: flex !important;
+  height:200px !important;
+}
+.Myimg2{
+  display: flex !important;
+  width:100% !important;
+  height:100px !important;
+  object-fit: cover !important;
+}
+.Upper-Middle{
+  width:90% !important;
+}
+}
+
+
+@media screen and (max-width: 350px) {
+  .SKILLS{
+    width:50% !important;
+    height:100% !important
+  }
+  .intro{
+      height:50vh !important;
+  }
+  .skillstitle{
+    font-size:  30px !important;
+  }
+
+}
+
+@media screen and (max-height: 1000px) {
+  .PR{
+    margin-top: 50px !important;
+  }
 
 }
