@@ -235,6 +235,9 @@ export default function Home() {
                     padding: "20px",
                     width: "75%",
                     height:'25vh',
+                    display:'flex',
+                    justifyContent:'space-between',
+                    flexDirection:'column'
                   }}
                   transition={{ delay: 0.5, duration: 2,  ease: "easeInOut" }}
               initial={{ opacity: 0 }}
@@ -244,7 +247,6 @@ export default function Home() {
                     style={{
                       fontSize: "35px",
                       fontWeight: "800",
-                      marginBottom: "20px",
                     }}
                   >
                     SKILLS

@@ -554,5 +554,14 @@ a {
   .PR{
     margin-top: 100px !important;
   }
+  .imgcontainer2{
+    margin-top: 100px !important;
+  }
+
+}
+@media screen and (max-height: 650px) {
+  .imgcontainer2{
+    margin-top: 200px !important;
+  }
 
 }
