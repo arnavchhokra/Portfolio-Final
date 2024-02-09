@@ -513,6 +513,7 @@ a {
 
   }
 
+
 .imgcontainer2{
   display: flex !important;
   height:200px !important;
@@ -526,13 +527,18 @@ a {
 .Upper-Middle{
   width:90% !important;
 }
+.ImageLayer{
+  height:50vw;
+}
+.PRTitle{
+  margin-top: 200px !important;
+}
 }
 
 
 @media screen and (max-width: 350px) {
   .SKILLS{
     width:50% !important;
-    height:100% !important
   }
   .intro{
       height:50vh !important;
@@ -540,7 +546,9 @@ a {
   .skillstitle{
     font-size:  30px !important;
   }
-
+  .PRTitle{
+    margin-top: 200px !important;
+  }
 }
 
 @media screen and (max-height: 1200px) {
@@ -551,9 +559,6 @@ a {
 }
 
 @media screen and (max-height: 900px) {
-  .PR{
-    margin-top: 100px !important;
-  }
   .imgcontainer2{
     margin-top: 100px !important;
   }
@@ -561,7 +566,7 @@ a {
 }
 @media screen and (max-height: 650px) {
   .imgcontainer2{
-    margin-top: 200px !important;
+    margin-top: 400px !important;
   }
 
 }

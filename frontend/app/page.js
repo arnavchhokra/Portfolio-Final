@@ -161,6 +161,7 @@ export default function Home() {
             <motion.div
               className="Upper-Middle"
               style={{ display: "flex", flexDirection: "column" ,
+              justifyContent:'flex-start',
               width: "58%",
               height:'100%',
             }}
@@ -168,7 +169,7 @@ export default function Home() {
 
 
 
-<motion.div className="imgcontainer2" transition={{ delay: 0, duration: 1,  ease: "easeInOut" }}
+<motion.div className="imgcontainer2" transition={{ delay: 0, duration: 1,  ease: "easeInOut",  }}
               initial={{ opacity: 0 }}
               animate={VisibilityAnimation}     style={{display:'flex', flexDirection:'column', justifyContent:'flex-start'}}>
             <Image className="Myimg2"
@@ -177,7 +178,7 @@ export default function Home() {
                 flex:'1',
                 borderRadius: "5px",
                 border: "1px solid grey",
-                display:'none'
+                display:'none',
               }}
               src={arnav}
               alt=""
@@ -196,9 +197,8 @@ export default function Home() {
                 style={{
                   border: "1px solid grey",
                   borderRadius: "5px",
-                  height:'30vh',
                   padding: "20px",
-                  width:'100%'
+                  width:'100%',
                 }}
               >
                 <motion.p className="intro-text"
@@ -295,7 +295,6 @@ export default function Home() {
                   borderRadius: "5px",
                   padding: "20px",
                   width: "100%",
-                  height: "100%",
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "flex-end",
@@ -663,22 +662,23 @@ export default function Home() {
       </div>
 
 
-        <div className='PR' style={{marginTop:'0px'}}>
+        <div className='PR' style={{height:'100%'}}>
         <motion.div
+        className="PRTitle"
           style={{ fontSize: "35px", fontWeight: "800", marginBottom:'25px', marginLeft:'9vw' }}
         >
           PROJECTS
         </motion.div>
-        <motion.div style={{display:'flex', gap:'5px', width:'100%', justifyContent:'center'}} >
+        <motion.div className="ImageLayer" style={{display:'flex', gap:'5px', width:'100%', justifyContent:'center'}} >
           <motion.div onHoverStart={() => Hovered(scaleAnimation1)} onHoverEnd={()=>NoHovered(scaleAnimation1)} animate={scaleAnimation1} initial={{scale:1}}>
-          <Image style={{width:"41vw",height:'auto',borderRadius:'5px'}} src={scream} alt="" />
+          <Image className="imgpr" style={{width:"40.85vw",height:'auto',borderRadius:'5px', height:'100%', objectFit:'cover'}} src={scream} alt="" />
           </motion.div>
           <motion.div onHoverStart={() => Hovered(scaleAnimation2)} onHoverEnd={()=>NoHovered(scaleAnimation2)} animate={scaleAnimation2} initial={{scale:1}}>
-          <Image style={{width:"41vw",height:'auto',borderRadius:'5px'}}src={akat} alt="" />
+          <Image className="imgpr" style={{width:"40.85vw",height:'auto',borderRadius:'5px', height:'100%', objectFit:'cover'}}src={akat} alt="" />
           </motion.div>
         </motion.div>
         <motion.div style={{display:'flex', width:'100%',justifyContent:'center', width:'100%'}} onHoverStart={() => Hovered(scaleAnimation3)} onHoverEnd={()=>NoHovered(scaleAnimation3)} animate={scaleAnimation3} initial={{scale:1}}   >
-        <Image style={{width:"82vw",height:'auto',borderRadius:'5px', height:'350px', objectFit:'cover', marginTop:'5px'}}src={three} alt="" />
+        <Image style={{width:"82vw",height:'auto',borderRadius:'5px', height:'350px', objectFit:'cover', marginTop:'5px', }}src={three} alt="" />
         </motion.div>
       </div>
       <div class="background">
