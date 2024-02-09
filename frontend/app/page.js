@@ -673,11 +673,11 @@ export default function Home() {
           <motion.div onHoverStart={() => Hovered(scaleAnimation1)} onHoverEnd={()=>NoHovered(scaleAnimation1)} animate={scaleAnimation1} initial={{scale:1}}>
           <Image className="imgpr" style={{width:"40.85vw",height:'auto',borderRadius:'5px', height:'100%', objectFit:'cover'}} src={scream} alt="" />
           </motion.div>
-          <motion.div onHoverStart={() => Hovered(scaleAnimation2)} onHoverEnd={()=>NoHovered(scaleAnimation2)} animate={scaleAnimation2} initial={{scale:1}}>
+          <motion.div onClick={()=>{window.location.href='https://vercel.com/arnavchhokra/nike-django/8ys573jWU2kRkXM1NwNZ5j5rUoJX'}} onHoverStart={() => Hovered(scaleAnimation2)} onHoverEnd={()=>NoHovered(scaleAnimation2)} animate={scaleAnimation2} initial={{scale:1}}>
           <Image className="imgpr" style={{width:"40.85vw",height:'auto',borderRadius:'5px', height:'100%', objectFit:'cover'}}src={akat} alt="" />
           </motion.div>
         </motion.div>
-        <motion.div style={{display:'flex', width:'100%',justifyContent:'center', width:'100%'}} onHoverStart={() => Hovered(scaleAnimation3)} onHoverEnd={()=>NoHovered(scaleAnimation3)} animate={scaleAnimation3} initial={{scale:1}}   >
+        <motion.div onClick={()=>{window.location.href='https://threemail-6bh6qzz3l-arnavchhokra.vercel.app/#'}} style={{display:'flex', width:'100%',justifyContent:'center', width:'100%'}} onHoverStart={() => Hovered(scaleAnimation3)} onHoverEnd={()=>NoHovered(scaleAnimation3)} animate={scaleAnimation3} initial={{scale:1}}   >
         <Image style={{width:"82vw",height:'auto',borderRadius:'5px', height:'350px', objectFit:'cover', marginTop:'5px', }}src={three} alt="" />
         </motion.div>
       </div>
